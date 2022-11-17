@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Datos</title>
+          <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minumum-scale=1">
+         <link rel="stylesheet" href="estilos111.css">
+    </head>
+    <header>
+        <label>Datos de Usuario</label>
+    </header>
+    <body>
+        <form action="/my-handling-form-page" method="post">
+            <h2>Rellena tu CV</h2>
+            <form action="/cv/dataCV" method="post" enctype="multipart/form-data">
+            Nombre <br/><input type="text" name="nombre" value="" size="20" maxlength="30" /><br/>
+            Apellidos <br/><input type="text" name="apellidos" value="" size="30" maxlength="50" /><br/>
+            Contraseña<br/><input type="password" name="contrasena" value="" maxlength="10" /><br/>
+            Identificación<br/>
+            <select name="select">
+             <option value="CC">CC</option>
+             <option value="TI" selected>TI</option>
+             <option value="CE">CE</option>
+            </select>
+            <input type="text" name="idsuj" value="" size="10" maxlength="9" /><br/>
+            Sexo <br/>
+            <input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre<br/>
+            <input type="radio" name="sexo" value="mujer" /> Mujer<br/>
+            <br/>
+            Incluir mi foto <input type="file" name="foto" /><br/>
+            <fieldset>
+                <legend>Datos personales</legend>
+                Departamento <br/>
+                <select name="select">
+                    <option value = "--Selecciona--">--Selecciona--</option>
+                <option value = "Amazonas">Amazonas</option>
+                <option value = "Antioquia">Antioquia</option>
+                <option value = "Arauca">Arauca</option>
+                <option value = "Atlántico">Atlántico</option>
+                <option value = "Bolívar">Bolívar</option>
+                <option value = "Boyacá">Boyacá</option>
+		        <option value = "Caldas">Caldas</option>
+                <option value = "Caquetá">Caquetá</option>
+                <option value = "Casanare">Casanare</option>
+                <option value = "Cauca">Cauca</option>
+                <option value = "Cesar">Cesar</option>
+                <option value = "Chocó">Chocó</option>		            
+                <option value = "Córdoba">Córdoba</option>
+                <option value = "Cundinamarca">Cundinamarca</option>
+                <option value = "Guainía">Guainía</option>
+		        <option value = "Guaviare">Guaviare</option>
+                <option value = "Huila">Huila</option>
+                <option value = "La Guajira">La Guajira</option>
+                <option value = "Magdalena">Magdalena</option>
+		        <option value = "Meta">Meta</option>
+                <option value = "Nariño">Nariño</option>
+                <option value = "Norte de Santander">Norte de Santander</option>
+                <option value = "Putumayo">Putumayo</option>                
+                <option value = "Quindío">Quindío</option>  
+		        <option value = "Risaralda">Risaralda</option>
+                <option value = "San Andrés y Providencia">San Andrés y Providencia</option>
+                <option value = "Santander">Santander</option>
+                <option value = "Sucre">Sucre</option>
+                <option value = "Tolima">Tolima</option>
+                <option value = "Valle del Cauca">Valle del Cauca</option>
+                <option value = "Vaupés">Vaupés</option>
+                <option value = "Vichada">Vichada</option>
+                </select>
+                <br/>
+                Fecha de nacimiento <br/>
+                <input type="number" name="dnac" value="" size="10" maxlength="8" /> de 
+                <select name="select">
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Junio</option>
+                    <option value="Julio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">Septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciemre</option>
+                </select> de 
+                <input type="number" name="anac" value="" size="10" maxlength="9" /><br/>
+                Temas de interés<br/>
+                <textarea>
+
+                </textarea>
+                </fieldset><br/>
+                <input type="submit" value="Guardar Cambios" required> <input type="submit" value="Borrar los datos introducidos">
+        </form>
+    </body>
